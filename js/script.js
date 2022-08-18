@@ -28,3 +28,21 @@ var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     spaceBetween: 30,
 });
+
+var swiper4 = new Swiper(".mySwiper4", {
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
+    pagination: {
+        el: '.swiper-pagination2'
+    },
+
+    // autoplay: {
+    //     delay: 5000,
+    // },
+    slidesPerView: 2,
+    spaceBetween: 30,
+    initialSlide: 1,
+    centeredSlides: true,
+});

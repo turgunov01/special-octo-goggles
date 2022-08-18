@@ -1,0 +1,112 @@
+.rate {
+    background: linear-gradient(180deg, #F4F4F4 0%, #E9E9E9 100%);
+    padding: 6rem 0;
+
+    & h1 {
+        overflow-x: hidden;
+    }
+
+    & .swiper {
+
+        &-slide {
+            transition: .3s;
+            opacity: 0.25;
+            width: 700px !important;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+
+        &-button {
+
+            &-next2 {
+                right: 25%;
+                transform: translateX(25%);
+                top: 50%;
+                outline: 1px solid rgba(251, 71, 71, 0.3);
+                outline-offset: .5rem;
+            }
+
+            &-prev2 {
+                left: 25%;
+                transform: translateX(-25%);
+                top: 50%;
+                outline: 1px solid rgba(251, 71, 71, 0.3);
+                outline-offset: .5rem;
+            }
+        }
+
+        &-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__card {
+            background-color: $color-white;
+            // max-width: 60rem !important;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.09);
+        }
+
+        &__published {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            &-date {
+                text-align: end;
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #5c5c5c;
+                line-height: 2rem;
+
+            }
+        }
+
+        &__rate {
+            margin: 0 auto;
+            text-align: center;
+
+            &-descr {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 151.01%;
+                color: #5c5c5c;
+            }
+
+            &-name {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: $color-black;
+                padding: 1.2rem 0 1.5rem 0;
+            }
+        }
+    }
+}
+
+.swiper-pagination2 {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.swiper-pagination2-bullet {
+    width: 2.2rem;
+    height: .5rem;
+    border-radius: 0 !important;
+    transition: 1s;
+    margin: 0 auto;
+}
+
+.swiper-pagination2-bullet-active {
+    background: linear-gradient(90.11deg, #FB4747 .52%, #c33 98.44%);
+    width: 7rem
+}

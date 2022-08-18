@@ -23,7 +23,8 @@ html {
     overflow-x: hidden;
 }
 
-ol, ul {
+ol,
+ul {
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -40,19 +41,54 @@ a {
 }
 
 .near {
-    & h1, h2, h3, h4, h5, h6 {
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         overflow: hidden;
     }
 }
+
 .video {
-    & h1, h2, h3, h4, h5, h6 {
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         overflow: hidden;
     }
 }
+
 .products {
-    & h1, h2, h3, h4, h5, h6 {
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         overflow: hidden;
     }
+}
+
+a:hover,
+a:active,
+a,
+a:focus {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+*__button {
+    cursor: pointer;
 }
 
 
@@ -99,3 +135,4 @@ a {
 @import './components/video.scss';
 @import './components/prods.scss';
 @import './components/art.scss';
+@import './components/rate.scss';
