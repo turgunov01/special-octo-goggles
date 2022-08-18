@@ -1,0 +1,176 @@
+.reason {
+    &__title {
+        margin: 7.2rem auto 1.8rem auto;
+        overflow-x: hidden;
+        animation: animated-text2 8s steps(80, end) 1s 1 normal both;
+        height: auto;
+
+        &-title {
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            color: $color-black;
+
+            & span {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+
+                    bottom: -1rem;
+                    background: $color-after-before;
+                    width: 50%;
+                    height: .5rem;
+                    animation: after-before .7s linear infinite alternate;
+                    z-index: 4;
+                    animation-delay: 7s;
+
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 50%;
+                    bottom: -1rem;
+                    background: $color-after-before;
+                    width: 50%;
+                    height: .5rem;
+                    animation: after-before .7s linear infinite alternate;
+                    z-index: 4;
+                    animation-delay: 7s;
+
+                }
+            }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        padding: 3rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: unset;
+            border-left: 3px solid $color-title;
+            border-top: 3px solid $color-title;
+            border-top-left-radius: 1rem;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 2rem;
+    }
+
+    &__text {
+        &-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        &-txt {
+            color: #5c5c5c;
+            font-size: 1.4rem;
+            font-weight: 400;
+            max-width: 55rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+
+    &__image {
+        object-fit: cover;
+        max-width: 47rem;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    &__content {
+        padding: 4rem;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.09);
+        border-radius: 1rem;
+
+        & .row:nth-of-type(2) {
+            flex-direction: row-reverse;
+            display: flex;
+            margin-top: 3rem;
+        }
+    }
+
+    &__swiper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    & .swiper {
+        padding: 2rem;
+
+        &-wrapper {
+            margin-left: -3.5rem;
+        }
+
+
+        &-slide {
+            filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.09));
+            border-radius: 1rem;
+            height: 11rem;
+            overflow: hidden;
+            background: white;
+
+            & img {
+                max-width: 30rem;
+                width: 50%;
+                border-radius: 10px;
+            }
+        }
+
+        &-button {
+
+            &-next,
+            &-prev {
+                transition: .3s;
+                box-shadow: 0 1px 3px $color-black;
+                outline: 1px solid $color-title;
+                outline-offset: .7rem;
+                top: 50%;
+                transform: translateY(50%);
+                position: absolute;
+
+                &:hover {
+                    box-shadow: 0 4px 4px #000;
+
+                }
+
+                &.swiper-button-disabled {
+                    display: none;
+                }
+            }
+
+            &-prev {
+                right: 102% !important;
+                left: unset;
+            }
+
+            &-next {
+                left: 100%;
+            }
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,242 @@
+.header {
+    padding-top: 5rem;
+    position: relative;
+    height: 75rem;
+    background: linear-gradient(180deg, #F4F4F4 0%, #E9E9E9 100%);
+
+
+
+    & .swiper {
+        z-index: 4 !important;
+
+        &-slide {
+            margin-right: 5rem;
+        }
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 50rem;
+        height: 75rem;
+        right: 0;
+        top: 0;
+        background: url('../../images/rightWall.svg') no-repeat center right / contain;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 31.2rem;
+        height: 31rem;
+        right: 27rem;
+        top: 10rem;
+        background: url('../../images/control-back.svg') no-repeat center right / contain;
+        z-index: 2;
+    }
+
+    &__cube {
+        position: absolute;
+        animation: cube 3s linear infinite;
+
+        &:nth-of-type(1) {
+            top: 60rem !important;
+            animation-delay: 2s;
+            right: 90%;
+            z-index: 3;
+        }
+
+        &:nth-of-type(2) {
+            right: 20rem;
+            top: 20rem;
+            z-index: 3;
+            animation-delay: 1s;
+            margin-left: 100px;
+        }
+
+        &:nth-of-type(3) {
+            top: 60rem;
+            right: 70rem;
+            width: 10rem;
+
+            z-index: 3;
+            animation-delay: 1.5s;
+        }
+
+        &:nth-of-type(4) {
+            right: 5rem;
+            z-index: 3;
+            top: 20rem;
+            width: 30rem;
+            filter: blur(5px);
+            animation-delay: 2.1s;
+        }
+    }
+
+    &__left {
+        text-align: start;
+    }
+
+    &__line {
+        position: relative;
+        width: 200px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: black;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__right {
+        position: relative;
+        z-index: 3;
+        animation: camera-animation 10s linear infinite alternate;
+    }
+
+    &__title {
+        font-size: 5.8rem;
+        font-weight: 700;
+        max-width: 60rem;
+        width: 100%;
+        line-height: 6.3rem;
+        animation: button_in 500ms ease-in;
+
+
+        &-custom {
+            text-transform: uppercase;
+            color: $color-title;
+            animation: button_in 500ms ease-in;
+
+        }
+    }
+
+    &__txt {
+        color: $color-text;
+        font-size: $size-normal;
+        max-width: 51.4rem;
+        width: 100%;
+        animation: button_in 750ms ease-in;
+        margin-bottom: 1.8rem;
+        margin-top: 1.8rem;
+    }
+
+    &__btn {
+        background: $color-button;
+        outline: none;
+        border: none;
+        padding: 1.5rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 0px 8px 30px -5px rgba(124, 23, 23, 0.2);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 700;
+        position: relative;
+        animation: button_in 1s ease-in;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $color-button;
+            border-radius: 1rem;
+            left: 0;
+            top: 0;
+            z-index: -2;
+        }
+
+        &::after {
+            animation: button 1s ease-in-out infinite;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $color-button;
+            border-radius: 1rem;
+            left: 0;
+            top: 0;
+            z-index: -2;
+        }
+
+        &::before {
+            animation: button 1.5s ease-in-out infinite;
+        }
+    }
+}
+
+
+.swiper {
+    position: relative;
+
+    &-button {
+        &-next {
+            display: block !important;
+            background: white;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-top: -5rem;
+            position: absolute;
+
+            &::after {
+                color: #FF0000 !important;
+                font-size: 20px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &-prev {
+            display: block !important;
+            background: white;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-top: -5rem;
+            position: absolute;
+
+            &::after {
+                color: #FF0000 !important;
+                font-size: 20px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &-pagination {
+        margin-bottom: 2rem;
+
+        &-bullet {
+            width: 2.2rem;
+            height: .5rem;
+            border-radius: 0 !important;
+            transition: 1s;
+
+            &-active {
+                background: $color-button;
+                width: 7rem;
+            }
+        }
+    }
+}

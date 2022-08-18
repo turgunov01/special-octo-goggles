@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+ol, ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-size: 1.6rem;
+}
+
+.near {
+    & h1, h2, h3, h4, h5, h6 {
+        overflow: hidden;
+    }
+}
+.video {
+    & h1, h2, h3, h4, h5, h6 {
+        overflow: hidden;
+    }
+}
+.products {
+    & h1, h2, h3, h4, h5, h6 {
+        overflow: hidden;
+    }
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+@import './base/vars.scss';
+@import './components/nav.scss';
+@import './components/header.scss';
+@import './layout/animation.scss';
+@import './components/about.scss';
+@import './components/ad.scss';
+@import './components/install.scss';
+@import './components/bens.scss';
+@import './components/reason.scss';
+@import './components/near.scss';
+@import './components/video.scss';
+@import './components/prods.scss';
+@import './components/art.scss';

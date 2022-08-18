@@ -1,0 +1,75 @@
+.near {
+    background: #333;
+    max-height: 24rem;
+    height: 100%;
+    margin-top: 12rem;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__parts {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -4rem;
+    }
+
+    &__camera {
+        width: max-content;
+
+        &-intro {
+            max-width: 58rem;
+            width: 100%;
+            transform: translateY(-4.7rem);
+        }
+    }
+
+    &__part {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        & * {
+            color: $color-white;
+        }
+
+        &-title {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 4.5rem;
+        }
+
+        &-txt {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            max-width: 62.5rem;
+            width: 100%;
+
+            & span {
+                color: $color-title;
+            }
+        }
+    }
+
+    &__btn {
+        background: $color-button;
+        outline: none;
+        border: none;
+        padding: 1.5rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 0px 8px 30px -5px rgba(124, 23, 23, 0.2);
+        font-size: 1.6rem;
+        color: white !important;
+        font-weight: 700;
+        position: relative;
+        outline: 1px solid rgba($color-title, 0.5);
+        outline-offset: .5rem;
+        
+    }
+}
