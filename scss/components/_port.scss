@@ -1,0 +1,140 @@
+.port {
+    position: relative;
+
+    & h1 {
+        overflow: hidden;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__cube {
+        position: absolute;
+        left: 5rem;
+        top: -11rem;
+        animation: cube 3s linear infinite alternate;
+    }
+
+    &__card {
+        max-width: 30rem;
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+
+        &-txt {
+            padding: 1.5rem;
+        }
+
+        &-about {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 151.01%;
+            color: #5C5C5C;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.consult {
+    background: #333;
+    margin-top: 7.2rem;
+    padding-left: 20rem;
+    max-height: 25rem;
+    height: 100%;
+    position: relative;
+    &__cube {
+        position: absolute;
+        &:nth-of-type(1) {
+            left: 3rem;
+            top: -5rem;
+        }
+        &:nth-of-type(2) {
+            left: 10rem;
+            top: 15rem;
+            width: 8rem;
+            height: 8rem;
+        }
+        &:nth-of-type(3) {
+            right: 8rem;
+            top: 10rem;
+            width: 10rem;
+            height: 10rem;
+        }
+        &:nth-of-type(4) {
+            right: 8rem;
+            top: 15rem;
+            filter: blur(7px);
+            width: 30rem;
+            height: 30rem;
+        }
+    }
+
+    &__start {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__person {
+        transform: translateY(-5.5rem);
+    }
+
+    &__txt {
+        max-width: 69rem;
+        width: 100%;
+        margin-left: -15rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 151.01%;
+        max-width: 65rem;
+        width: 100%;
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 17rem;
+        color: white;
+        margin-top: -2rem;
+    }
+
+    &__btn {
+        background: $color-button;
+        padding: 1.5rem 3.5rem;
+        border: none;
+        outline: none;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: $color-white;
+        transition: .3s;
+        border-radius: 1rem;
+        &:hover {
+            filter: invert(50);
+        }
+    }
+}
