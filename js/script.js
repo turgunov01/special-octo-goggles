@@ -27,6 +27,20 @@ var swiper = new Swiper(".mySwiper3", {
     // },
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+        0: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+        600: {
+            spaceBetween: 20,
+            slidesPerView: 3,
+        },
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    }
 });
 
 var swiper4 = new Swiper(".mySwiper4", {
@@ -41,10 +55,21 @@ var swiper4 = new Swiper(".mySwiper4", {
     // autoplay: {
     //     delay: 5000,
     // },
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
-    initialSlide: 1,
+    // initialSlide: 1,
     centeredSlides: true,
+    breakpoints: {
+        0 : {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+        600: {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            
+        }
+    }
 });
 
 let nav = document.querySelector('.nav')
@@ -58,6 +83,7 @@ window.addEventListener('scroll', function () {
         nav.style.background = 'unset'
         nav.style.padding = 'unset'
         nav.style.boxShadow = 'unset'
+        nav.style.backdropFilter = '20px'
     }
 })
 

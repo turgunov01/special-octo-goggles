@@ -324,6 +324,15 @@
     }
 
     &__input {
+        border-radius: 1rem;
+    }
+
+    &__txt {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    &__input {
         position: relative;
         background: #CC3333;
 
@@ -375,17 +384,6 @@
         align-items: flex-start;
         justify-content: space-between;
         position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 5%;
-            transform: translateX(-4%);
-            bottom: 0;
-            background: #5c5c5c;
-            height: 1px;
-            width: 97%;
-        }
     }
 
     & .container:nth-of-type(2) {
@@ -393,6 +391,17 @@
         align-items: flex-start;
         justify-content: space-between;
         position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 5%;
+            transform: translateX(-4%);
+            top: 0;
+            background: #5c5c5c;
+            height: 1px;
+            width: 97%;
+        }
 
         &::after {
             content: '';
