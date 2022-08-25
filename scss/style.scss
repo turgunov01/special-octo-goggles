@@ -1496,14 +1496,145 @@ button {
         }
     }
 
+    .footer .container:nth-of-type(3) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .payments {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .footer__list-main {
+        margin-bottom: 3rem;
+    }
+
+    .article__title {
+        white-space: unset;
+        animation: unset;
+
+        &-title {
+            white-space: unset;
+            animation: unset;
+            font-size: 2.2rem;
+            line-height: 3.8rem;
+
+            & span::after {
+                display: none;
+            }
+
+            & span::before {
+                display: none;
+            }
+        }
+    }
+
     .loc-title {
         font-size: 2rem;
         line-height: 3rem;
     }
 
+    .loc__link:hover {
+        transform: unset;
+    }
+
+    .accordion-wrapper-cube {
+        display: none;
+    }
+
+    .exp .accordion-button {
+        font-size: 1.6rem;
+    }
+
+    .exp__about-title {
+        font-size: 2rem;
+    }
+
+    .exp .accordion-wrapper::before {
+        display: none;
+    }
+
+    .exp .accordion-button {
+        font-size: 1.6rem !important;
+    }
+
+    .exp .accordion__check {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: .3s;
+        right: 1rem;
+    }
+
+    .exp__about h4 {
+        color: black;
+    }
+
+    .exp__about-link {
+        margin-top: 1rem;
+    }
+
     .loc__lists {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .exp .accordion-body {
+        font-size: 14px;
+    }
+
+    .exp .accordion-button.collapsed {
+        background: white;
+        color: #000;
+        padding-right: 4.5rem;
+    }
+
+    .news .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .news__txt {
+        border-radius: 1rem;
+    }
+
+    .news {
+        padding: 2.5rem 0 7rem 0;
+    }
+
+    .news__input .news__txt {
+        position: absolute;
+        background: white;
+        color: #CF3535;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        right: unset;
+        top: 5rem;
+        padding: 1rem 0;
+        max-width: 15rem;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .footer .container:nth-of-type(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .news__title-txt {
+        text-align: end;
     }
 
     .loc__title {
